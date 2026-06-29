@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Features &amp; Commands — OceanBite</title>
+  <meta name="description" content="Every feature and slash command in OceanBite, the free Discord fishing game — catch fish, cook dishes, hunt bounties, explore voyages, battle bosses, and more.">
+  <link rel="canonical" href="https://zer0krypt.github.io/Discord-OceanBite-Public/features.html">
+  <link rel="icon" type="image/png" href="logo.png">
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Features &amp; Commands — OceanBite">
+  <meta property="og:description" content="Every feature and slash command in OceanBite — catch fish, cook dishes, hunt bounties, explore voyages, battle bosses, and more.">
+  <meta property="og:url" content="https://zer0krypt.github.io/Discord-OceanBite-Public/features.html">
+  <meta property="og:image" content="https://zer0krypt.github.io/Discord-OceanBite-Public/logo.png">
+  <meta property="og:site_name" content="OceanBite">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Features &amp; Commands — OceanBite">
+  <meta name="twitter:description" content="Every feature and slash command in OceanBite — catch fish, cook dishes, hunt bounties, explore voyages, battle bosses, and more.">
+  <meta name="twitter:image" content="https://zer0krypt.github.io/Discord-OceanBite-Public/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="site.css">
+  <style>
+    .cmd { font-family: ui-monospace, 'Cascadia Code', 'Fira Code', monospace; font-size: 0.92em; background: #0d335033; padding: 0.15em 0.45em; border-radius: 5px; color: var(--foam); white-space: nowrap; }
+    .tag { display: inline-block; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; padding: 0.15em 0.55em; border-radius: 4px; vertical-align: middle; margin-left: 0.4rem; }
+    .tag-core { background: #5eead433; color: var(--foam); }
+    .tag-social { background: #a78bfa33; color: #c4b5fd; }
+    .tag-adventure { background: #f59e0b33; color: var(--gold); }
+    .tag-progress { background: #34d39933; color: #6ee7b7; }
+    .feature-grid { display: grid; grid-template-columns: 1fr; gap: 0.6rem; margin: 0.8rem 0 0.2rem; }
+    .feature-item { display: flex; gap: 0.8rem; align-items: baseline; padding: 0.5rem 0; border-bottom: 1px solid #1d4a6b44; }
+    .feature-item:last-child { border-bottom: none; }
+    .feature-emoji { font-size: 1.1rem; flex-shrink: 0; width: 1.6rem; text-align: center; }
+    .feature-body { flex: 1; }
+    .feature-body strong { color: #f3fafd; }
+    .feature-body p { margin: 0.15rem 0 0; font-size: 0.95rem; color: var(--ink-dim); }
+    .sub-list { margin: 0.3rem 0 0 0; padding-left: 0; list-style: none; font-size: 0.92rem; }
+    .sub-list li { color: var(--ink-dim); padding: 0.1rem 0; }
+    .sub-list li::before { content: "└ "; color: var(--line); }
+    .back-link { display: inline-block; margin-bottom: 1rem; font-size: 0.95rem; }
+    main section:nth-of-type(6) { animation-delay: 0.30s; }
+    main section:nth-of-type(7) { animation-delay: 0.36s; }
+    main section:nth-of-type(8) { animation-delay: 0.42s; }
+    main section:nth-of-type(9) { animation-delay: 0.48s; }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Features & Commands — OceanBite",
+    "description": "Every feature and slash command in OceanBite, the free Discord fishing game.",
+    "url": "https://zer0krypt.github.io/Discord-OceanBite-Public/features.html",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "OceanBite",
+      "url": "https://zer0krypt.github.io/Discord-OceanBite-Public/"
+    },
+    "about": {
+      "@type": "SoftwareApplication",
+      "name": "OceanBite",
+      "applicationCategory": "GameApplication",
+      "operatingSystem": "Discord",
+      "description": "A fishing game bot for Discord — catch fish, cook dishes, hunt bounties, explore voyages, battle bosses, join clans, and climb the leaderboards.",
+      "image": "https://zer0krypt.github.io/Discord-OceanBite-Public/logo.png",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+    }
+  }
+  </script>
+</head>
+<body>
+  <div class="wrap">
+    <header class="masthead">
+      <img class="crest" src="logo.png" alt="OceanBite">
+      <p class="brand">OceanBite</p>
+      <h1>Features &amp; Commands</h1>
+      <p class="effective">Everything the game has to offer — one page, every slash command.</p>
+    </header>
+
+    <a class="back-link" href="index.html">&larr; Back to home</a>
+
+    <main>
+      <!-- ───────── Fishing ───────── -->
+      <section>
+        <h2>🎣 Fishing <span class="tag tag-core">Core</span></h2>
+        <p>Fishing is the heart of OceanBite. Cast your line, wait for the bite, reel in your catch. An interactive cast-wait-reel flow with patience cues, gamble windows, and anti-cheat verification keeps every cast engaging.</p>
+        <div class="feature-grid">
+          <div class="feature-item">
+            <span class="feature-emoji">🐟</span>
+            <div class="feature-body">
+              <strong><span class="cmd">/fish</span> — Cast your line</strong>
+              <p>The main gameplay loop. Cast into your current biome, watch for procedural cues, and reel in at the right moment. Catches are influenced by your rod, bait, boat, pet, weather, buffs, and biome. Shinies, event fish, and relics can appear on any cast.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <span class="feature-emoji">💰</span>
+            <div class="feature-body">
+              <strong><span class="cmd">/sell</span> — Sell your haul</strong>
+              <p>Turn your catch into money. Sell everything at once or pick what to keep. Prices scale with fish rarity and your Haggling skill.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <span class="feature-emoji">💵</span>
+            <div class="feature-body">
+              <strong><span class="cmd">/balance</span> — Check your wallet</strong>
+              <p>View your current money and Sea Crystal balances.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <span class="feature-emoji">🌤️</span>
+            <div class="feature-body">
+              <strong><span class="cmd">/weather</span> — Fishing conditions</strong>
+              <p>Weather rotates every 2 hours per biome — clear skies, rain (+30% rare chance), sunny spells (+25% money), fog, storms, and more. Check conditions before you cast.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <span class="feature-emoji">📖</span>
+            <div class="feature-body">
+              <strong><span class="cmd">/fishdex</span> — Collection log</strong>
+              <p>Track every species you've caught, your personal records, and which shinies you've found. A completionist's dream.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ───────── Adventures ───────── -->
+      <section>
+        <h2>🌊 Adventures <span class="tag tag-adventure">Adventure</span></h2>
+        <p>Beyond the basic cast there are multi-step expeditions, push-your-luck dives, cooperative boss fights, delivery contracts, and a full cooking system.</p>
+        <div class="feature-grid">
+          <div class="feature-item">
+            <span class="feature-emoji">⚓</span>
+            <div class="feature-body">
+              <strong><span class="cmd">/voyage</span> — Multi-leg expeditions</strong>
+              <p>Embark on a real-time expedition with travel legs, interactive encounters, and a climactic boss-fish fight at the end. Loot accumulates along the way — surface to collect, or lose it all if you fall.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <span class="feature-emoji">🤿</span>
+            <div class="feature-body">
+              <strong><span class="cmd">/dive</span> — Deep Dive</strong>
+              <p>Pay an entry fee and descend level by level. Each depth multiplies your haul but raises the bust chance (up to 85%). Surface to bank your winnings, or push deeper and risk it all. Exotic crates appear at depths 5, 10, and 15.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <span class="feature-emoji">🍳</span>
+            <div class="feature-body">
+              <strong><span class="cmd">/galley</span> — Cook dishes &amp; buffs</strong>
+              <p>Turn your catch into ingredient dishes with timed buffs. Learn recipes, cook meals, and apply galley buffs that stack with your other bonuses. Some recipes are unlocked through Community Goals and special achievements.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <span class="feature-emoji">📋</span>
+            <div class="feature-body">
+              <strong><span class="cmd">/bounties</span> — Harbor bounty board</strong>
+              <p>Accept delivery contracts for fish and dishes. Bounties are tailored to what you can actually produce — only species from biomes you've unlocked and recipes you've learned will appear. Fill them for money, XP, Harbor Tribute, and rank.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <span class="feature-emoji">👹</span>
+            <div class="feature-body">
+              <strong><span class="cmd">/boss</span> — World Boss</strong>
+              <p>A 48-hour cooperative fight that runs every two weeks (Wednesday–Friday UTC). Every cast while the boss is up deals damage equal to your catch weight. Everyone who lands 10+ casts gets a proportional share of the reward pot — recruiting friends always helps.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <span class="feature-emoji">🎪</span>
+            <div class="feature-body">
+              <strong><span class="cmd">/event</span> — Weekend &amp; seasonal events</strong>
+              <p>Every Saturday and Sunday features a rotating weekend event with unique fish, a bonus shop, and special mechanics. Seasonal events (holidays, etc.) run for longer stretches with exclusive rewards and event-only pets.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <span class="feature-emoji">🏆</span>
+            <div class="feature-body">
+              <strong><span class="cmd">/tournament</span> — Competitions</strong>
+              <p>Three layers of competition running simultaneously:</p>
+              <ul class="sub-list">
+                <li><span class="cmd">/tournament start</span> — Server tournaments: an admin kicks one off, and the heaviest haul by the deadline wins the pot.</li>
+                <li><span class="cmd">/tournament global</span> — Global daily &amp; weekly tournaments where every cast contributes weight automatically. Top 10 win prizes.</li>
+                <li><strong>Server Showdown</strong> — A weekly server-vs-server competition. Your server's total weight divided by the square root of its participants is the score, so small servers can genuinely compete. Winners get +5% money &amp; XP for the next week.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ───────── Gear & Shop ───────── -->
+      <section>
+        <h2>🛒 Gear &amp; Shop <span class="tag tag-core">Core</span></h2>
+        <p>Upgrade your loadout to catch rarer fish, earn more money, and unlock new abilities.</p>
+        <div class="feature-grid">
+          <div class="feature-item">
+            <span class="feature-emoji">🏪</span>
+            <div class="feature-body">
+              <strong><span class="cmd">/shop</span> — Buy equipment</strong>
+              <p>Browse and purchase rods, boats, bait, charms, and pets. Each tier unlocks better stats and new mechanics.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <span class="feature-emoji">🎣</span>
+            <div class="feature-body">
+              <strong><span class="cmd">/rod</span> — View &amp; equip rods</strong>
+              <p>Each rod has a rarity multiplier and special perks. Rods develop affinity with biomes the more you use them there.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <span class="feature-emoji">🚤</span>
+            <div class="feature-body">
+              <strong><span class="cmd">/boat</span> — View &amp; equip boats</strong>
+              <p>Boats boost money, XP, and fish weight. Better boats also reduce cooldown between casts.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <span class="feature-emoji">🪱</span>
+            <div class="feature-body">
+              <strong><span class="cmd">/bait</span> — Check &amp; switch bait</strong>
+              <p>Bait is consumed on each cast and boosts specific stats — rare chance, money, XP, or quantity. Stock up at the shop.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <span class="feature-emoji">✨</span>
+            <div class="feature-body">
+              <strong><span class="cmd">/charms</span> — Equip charms</strong>
+              <p>Unlocked at level 20. Charms provide passive bonuses — stack up to your charm slots for a custom loadout.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <span class="feature-emoji">🐾</span>
+            <div class="feature-body">
+              <strong><span class="cmd">/pets</span> — Active pet</strong>
+              <p>Pick a companion that tags along on every cast. Pets grant unique bonuses and some are exclusive to seasonal events or achievements.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <span class="feature-emoji">🗺️</span>
+            <div class="feature-body">
+              <strong><span class="cmd">/biome</span> — Travel to new waters</strong>
+              <p>Seven biomes to explore, from the starting Ocean all the way to the Arctic Abyss (level 95). Each biome has unique fish species, higher value multipliers, and longer cooldowns.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <span class="feature-emoji">📚</span>
+            <div class="feature-body">
+              <strong><span class="cmd">/skills</span> — Permanent upgrades</strong>
+              <p>Spend money on permanent skills that carry through prestige: Sharp Hooks (rare chance), Wide Nets (extra fish), Haggling (sale price), Treasure Sense (chest chance), Lockpicking (chest loot), Bait Thrift (bait saving), and Quick Cast (cooldown reduction). Each has multiple levels.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ───────── Progression ───────── -->
+      <section>
+        <h2>📈 Progression <span class="tag tag-progress">Progress</span></h2>
+        <p>Level up, prestige, earn daily rewards, and track your lifetime stats across a deep progression system.</p>
+        <div class="feature-grid">
+          <div class="feature-item">
+            <span class="feature-emoji">👤</span>
+            <div class="feature-body">
+              <strong><span class="cmd">/profile</span> — Player card</strong>
+              <p>View anyone's profile — level, prestige tier, clan, badges, active pet, and lifetime stats at a glance.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <span class="feature-emoji">📊</span>
+            <div class="feature-body">
+              <strong><span class="cmd">/stats</span> — Lifetime stats</strong>
+              <p>Detailed fishing statistics: total casts, fish caught by rarity, money earned, biggest catch, and more.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <span class="feature-emoji">🔥</span>
+            <div class="feature-body">
+              <strong><span class="cmd">/buffs</span> — Active multipliers</strong>
+              <p>See every buff affecting your casts — gear, skills, weather, boosts, clan buffs, rested tides, and event bonuses all in one view.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <span class="feature-emoji">📝</span>
+            <div class="feature-body">
+              <strong><span class="cmd">/quests</span> — Daily &amp; weekly quests</strong>
+              <p>Fresh objectives every day and week: catch X fish, earn Y money, dive to depth Z. Completing quests grants bonus money, XP, and sometimes Sea Crystals.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <span class="feature-emoji">🎁</span>
+            <div class="feature-body">
+              <strong><span class="cmd">/daily</span> — Daily reward</strong>
+              <p>Claim a free reward once per day. Streaks increase the payout.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <span class="feature-emoji">🎫</span>
+            <div class="feature-body">
+              <strong><span class="cmd">/license</span> — Monthly reward track</strong>
+              <p>A free 10-tier monthly reward track. Earn License XP from casts, daily claims, and quest completions. Tier 10 grants the Licensed badge. Resets every calendar month.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <span class="feature-emoji">⭐</span>
+            <div class="feature-body">
+              <strong><span class="cmd">/prestige</span> — Reset for power</strong>
+              <p>At level 100, prestige to reset your progress in exchange for permanent buffs, a prestige badge (tiers I–X), and unlockable embed colors. Seasonal pets survive the reset. Up to 10 prestige tiers.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <span class="feature-emoji">💎</span>
+            <div class="feature-body">
+              <strong><span class="cmd">/boosts</span> — Temporary boosts &amp; crew</strong>
+              <p>Spend Sea Crystals on timed boosts — XP, money, rare fish, cooldown reduction — or hire a crew that fishes alongside you. Boosts stack duration (capped at 24 hours).</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <span class="feature-emoji">😴</span>
+            <div class="feature-body">
+              <strong>Rested Tides</strong>
+              <p>While you're offline, you accumulate rested charges (1 every 2 minutes, up to 200). Each charge grants +50% XP on your next cast, helping casual players keep pace.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ───────── Collections ───────── -->
+      <section>
+        <h2>🐾 Collections <span class="tag tag-progress">Progress</span></h2>
+        <p>Chase rare drops, earn achievements, and build a collection that's uniquely yours.</p>
+        <div class="feature-grid">
+          <div class="feature-item">
+            <span class="feature-emoji">🏅</span>
+            <div class="feature-body">
+              <strong><span class="cmd">/badge</span> — Achievement badges</strong>
+              <p>Earn badges for milestones — total casts, rare catches, prestige tiers, licensed months, and more. Displayed on your profile for all to see.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <span class="feature-emoji">🔮</span>
+            <div class="feature-body">
+              <strong><span class="cmd">/relics</span> — One-of-one collectibles</strong>
+              <p>Relics are unique, procedurally generated collectibles that drop from any cast. Each has a tier (Common to Mythic), a material, an object, and an epithet — no two are alike. Inspect any relic to see its lore, precise drop rate, and lifetime cast number found on. Once caught, it's yours alone, forever.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ───────── Social ───────── -->
+      <section>
+        <h2>👥 Social <span class="tag tag-social">Social</span></h2>
+        <p>OceanBite is more fun with friends — clans, co-op parties, community goals, leaderboards, and a referral program.</p>
+        <div class="feature-grid">
+          <div class="feature-item">
+            <span class="feature-emoji">⚔️</span>
+            <div class="feature-body">
+              <strong><span class="cmd">/clan</span> — Clans &amp; raid bosses</strong>
+              <p>Create or join a clan. Clan members share XP toward a clan level that grants passive buffs for everyone. Clan officers can summon raid bosses at chosen difficulties for big group payouts.</p>
+              <ul class="sub-list">
+                <li><span class="cmd">/clan create</span> — Found a new clan</li>
+                <li><span class="cmd">/clan join</span> — Join by name</li>
+                <li><span class="cmd">/clan info</span> — View your clan</li>
+                <li><span class="cmd">/clan raid</span> — Summon a raid boss</li>
+                <li><span class="cmd">/clan top</span> — Clan leaderboard</li>
+                <li><span class="cmd">/clan leave</span> / <span class="cmd">/clan kick</span> — Leave or remove a member</li>
+              </ul>
+            </div>
+          </div>
+          <div class="feature-item">
+            <span class="feature-emoji">🏰</span>
+            <div class="feature-body">
+              <strong><span class="cmd">/clanhall</span> — Clan Hall</strong>
+              <p>Fund shared rooms together — each grants a clan-wide buff that grows with its level: Tackle Workshop (rare chance), Treasury (money), Scholars' Archive (XP), Galley Hall (fish weight), and Voyage Dock (exotic chance).</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <span class="feature-emoji">🎉</span>
+            <div class="feature-body">
+              <strong><span class="cmd">/party</span> — Co-op fishing parties</strong>
+              <p>Start or join a live fishing party in your server. A synergy buff scales with how many members are actively casting. A shared pot — minted from everyone's casts — splits equally at the end. Up to 5 parties can run simultaneously per server.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <span class="feature-emoji">🤝</span>
+            <div class="feature-body">
+              <strong><span class="cmd">/community</span> — Weekly server goal</strong>
+              <p>Every server gets a weekly cooperative target (catch weight, money earned, etc.) that scales with active players. Hit the target and every qualifying contributor earns a reward pot, Sea Crystals, Harbor Tribute, and unique Galley recipes. Top contributors earn the Tidewarden's Seal.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <span class="feature-emoji">📊</span>
+            <div class="feature-body">
+              <strong><span class="cmd">/top</span> — Leaderboards</strong>
+              <p>Server and global leaderboards for level, money, weight, casts, and more.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <span class="feature-emoji">📍</span>
+            <div class="feature-body">
+              <strong><span class="cmd">/pos</span> — Your ranks</strong>
+              <p>See where you stand on every global leaderboard at a glance.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <span class="feature-emoji">🪙</span>
+            <div class="feature-body">
+              <strong><span class="cmd">/coinflip</span> — Gamble</strong>
+              <p>Flip a coin to double your bet — or lose it. Simple, fast, high-stakes fun.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <span class="feature-emoji">📨</span>
+            <div class="feature-body">
+              <strong><span class="cmd">/recruit</span> — First Mate program</strong>
+              <p>Share your invite link and earn milestone rewards when friends join and play. Recruiting also helps during World Boss fights.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ───────── Server Setup ───────── -->
+      <section>
+        <h2>🛠️ Server Setup <span class="tag tag-core">Core</span></h2>
+        <p>Server admins can configure OceanBite for their community with dedicated channels and a live activity feed.</p>
+        <div class="feature-grid">
+          <div class="feature-item">
+            <span class="feature-emoji">📡</span>
+            <div class="feature-body">
+              <strong><span class="cmd">/activity enable</span> — Set up OceanBite channels</strong>
+              <p>Creates an OceanBite category with a start-fishing lobby and an always-on activity feed. The feed posts hourly per-angler digests and immediate alerts for purchases, voyages, milestones, relic drops, boss sweeps, and more.</p>
+              <ul class="sub-list">
+                <li><span class="cmd">/activity status</span> — View current setup &amp; settings</li>
+                <li><span class="cmd">/activity teardown</span> — Remove OceanBite channels</li>
+              </ul>
+            </div>
+          </div>
+          <div class="feature-item">
+            <span class="feature-emoji">🧵</span>
+            <div class="feature-body">
+              <strong><span class="cmd">/start</span> — Private fishing thread</strong>
+              <p>Once a server is set up, each player gets their own private fishing thread — a clean, personal space to cast without cluttering public channels.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ───────── Utilities ───────── -->
+      <section>
+        <h2>⚙️ Utilities</h2>
+        <div class="feature-grid">
+          <div class="feature-item">
+            <span class="feature-emoji">🎛️</span>
+            <div class="feature-body">
+              <strong><span class="cmd">/menu</span> — Control panel</strong>
+              <p>Open an interactive button-and-dropdown panel that lets you play the entire game without typing another command. Fish, sell, shop, equip, dive — all from one place.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <span class="feature-emoji">❓</span>
+            <div class="feature-body">
+              <strong><span class="cmd">/help</span> — How to play</strong>
+              <p>A quick-reference card with every command grouped by category.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <span class="feature-emoji">⚙️</span>
+            <div class="feature-body">
+              <strong><span class="cmd">/settings</span> — Preferences</strong>
+              <p>Customize your experience — toggle compact mode, pick your embed color (unlocked via prestige), and manage vote reminders.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <span class="feature-emoji">ℹ️</span>
+            <div class="feature-body">
+              <strong><span class="cmd">/info</span> — About OceanBite</strong>
+              <p>Links, stats, community info, and legal pages.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <span class="feature-emoji">🔗</span>
+            <div class="feature-body">
+              <strong><span class="cmd">/invite</span> — Bot invite link</strong>
+              <p>Get a link to add OceanBite to another server.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <span class="feature-emoji">🗳️</span>
+            <div class="feature-body">
+              <strong><span class="cmd">/vote</span> — Vote on top.gg</strong>
+              <p>Vote for OceanBite and earn rewards — a 12-hour Voter's Tide boost (×1.5 rare chance) plus bonus loot. Opt into vote reminder DMs so you never miss a window.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ───────── The World ───────── -->
+      <section>
+        <h2>🌍 The World</h2>
+        <p>A few systems run in the background, making every session feel different.</p>
+        <div class="feature-grid">
+          <div class="feature-item">
+            <span class="feature-emoji">🌦️</span>
+            <div class="feature-body">
+              <strong>Dynamic Weather</strong>
+              <p>Weather rotates every 2 hours independently per biome. Rain, storms, fog, sunny spells, and more — each with gameplay effects on money, rare chance, XP, or cooldown.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <span class="feature-emoji">📦</span>
+            <div class="feature-body">
+              <strong>Treasure Chests</strong>
+              <p>Random chests appear while fishing, containing money, XP, Sea Crystals, or exotic items. The Treasure Sense and Lockpicking skills improve your odds and payouts.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <span class="feature-emoji">🛡️</span>
+            <div class="feature-body">
+              <strong>Anti-Cheat</strong>
+              <p>Periodic quick-reaction emoji checks ensure fair play. Just click the matching emoji when prompted — macros and self-bots are not tolerated.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <span class="feature-emoji">📢</span>
+            <div class="feature-body">
+              <strong>Activity Feed</strong>
+              <p>Servers with OceanBite set up get a live activity channel: hourly fishing digests per player, plus instant alerts for big catches, relic drops, milestones, purchases, World Boss damage sweeps, and top-5 leaderboard shakeups.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <hr class="wave-rule">
+    <footer>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="terms.html">Terms</a>
+        <a href="privacy.html">Privacy</a>
+      </nav>
+      🎣 OceanBite — not affiliated with Discord Inc.
+    </footer>
+  </div>
+</body>
+</html>

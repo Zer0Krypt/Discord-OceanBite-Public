@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://zer0krypt.github.io/Discord-OceanBite-Public/sitemap.xml
